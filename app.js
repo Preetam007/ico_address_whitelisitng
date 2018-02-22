@@ -67,10 +67,10 @@ app.post('/whitelist', function (req, res) {
     
 });
 
-app.get('/balance', function (req, res) {
-  const balance = web3.eth.getBalance('0xe6284AD7b839F48e59Fef8708B91f0B938D7f295').toNumber()
+app.get('/balance/:id', function (req, res) {
+  const balance = web3.eth.getBalance(req.params.id).toNumber();
   const balanceInEth = balance / 1000000000000000000;
-  res.send('' + balanceInEth);
+  res.send(balanceInEth);
 })
 
 app.get('/', function (req, res) {

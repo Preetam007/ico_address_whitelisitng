@@ -78,7 +78,7 @@ module.exports = {
     //truffle migrate --network ropsten
     // ropsten: {
     //   provider: function() {
-    //     return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/bcojZFdgTHPc8qdQGN3D")
+    //     return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/<key>")
     //   },
     //   network_id: 3
     // },

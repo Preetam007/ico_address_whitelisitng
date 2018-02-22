@@ -1,16 +1,17 @@
-`npm install`
+# ico-address-whitelisting
 
-From APIs end point :
-`node app.js`
+ICO address whitelisitng for kyc
 
-for bulk
-`node scripts/whitelist_bulk.js`
+## Prerequisites
+  - Node
+  - Geth
+  - Infura APIs key
 
-infura
-`get key first`
+## Steps
+  - npm install
+  - APIs end point `node app.js`
+  - for bulk uploading `node scripts/whitelist_bulk.js`
 
-geth:
-`geth --rinkeby --unlock address --password password --rpc --rpcport 8549`
-
-APIs
-` post /whitelist`
+## APIs
+  - post `/whitelist`  
+  - get `totalWhitelisted`
